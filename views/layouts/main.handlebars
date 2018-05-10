@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>Burger App</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel="stylesheet" href="../../public/assets/css/burger_style.css" type="text/css" />
+	</head>
+	
+    <body class= 'mb-5'>
+        <div class="container text-center">
+        <div class="jumbotron p-0">
+            <h1 class="mt-5 burger">Burger App</h1>
+            <img class="my-5" src="../../public/assets/img/burger.png">
+
+            <form action="/burgers/create" method="POST">
+                <div class="form-group">
+                    <label for="new_burger"></label>
+                    <input placeholder="Add a New Burger Here" type="text" class="form-control" name="burger_name"></input>
+                    <button type="submit" class="btn add">Add</button>
+                </div>
+            </form>
+        </div>
+		    {{{ body }}}
+	</body>
+</html>
